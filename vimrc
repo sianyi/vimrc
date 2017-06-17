@@ -31,7 +31,7 @@ Plugin 'scrooloose/nerdcommenter'
 Plugin 'vim-scripts/taglist.vim'
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'bogado/file-line'
-Plugin 'bling/vim-airline'
+Plugin 'vim-airline/vim-airline'
 Plugin 'vim-scripts/winmanager'
 Plugin 'vim-scripts/a.vim'
 Plugin 'kien/ctrlp.vim'
@@ -60,9 +60,6 @@ set cursorline
 set tabstop=4
 set shiftwidth=4
 
-" NERD tree setting
-" autocmd vimenter * NERDTree
-" Taglist config
 " 顯示列號
 set number
 " " 語法高亮度顯示
@@ -101,7 +98,7 @@ let Tlist_Exit_OnlyWindow = 1
 let Tlist_File_Fold_Auto_Close = 1 
 let Tlist_Auto_Open = 1
 
-
+"syntastic config -------------------
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
@@ -110,4 +107,13 @@ let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 0
 let g:syntastic_check_on_wq = 0
+
+" air line config --------
+let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#buffer_nr_show = 1
+
+" Ctrlp config ------------------------
+let g:ctrlp_cmd = 'CtrlPBuffer'
+
+
 
