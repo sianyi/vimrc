@@ -78,7 +78,7 @@ highlight Comment ctermfg=cyan
 highlight Search term=reverse ctermbg=4 ctermfg=7
 " 設定 tab 鍵的字元數
 set wrap
-"map <F10> :NERDTreeToggle<CR>
+map <F1> :NERDTreeToggle<CR>
 map <F2> :CtrlPMixed<CR>
 map <f3> :ts<CR>
 map <F9> :Tlist<CR>
