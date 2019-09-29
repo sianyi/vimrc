@@ -77,6 +77,9 @@ highlight Comment ctermfg=cyan
 " " 設定搜尋到的字串顏色
 highlight Search term=reverse ctermbg=4 ctermfg=7
 " 設定 tab 鍵的字元數
+set incsearch
+set showmatch
+
 set wrap
 map <F1> :NERDTreeToggle<CR>
 map <F2> :CtrlPMixed<CR>
